@@ -5,10 +5,9 @@ import {Provider} from 'react-redux';
 
 import Posts from './component/Post';
 import PostForm from './component/PostForm';
-import {createStore,applyMiddleware} from 'redux';
+import store from './store';
 
 
-const store = createStore(() =>[],{},applyMiddleware());
 
 function App() {
   return (
@@ -24,6 +23,7 @@ function App() {
     </div>
     </Provider>
   );
+
 }
 
 export default App;
